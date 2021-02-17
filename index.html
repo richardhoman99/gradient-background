@@ -1,0 +1,44 @@
+<!-- https://www.gradient-animator.com/ -->
+<html>
+<head>
+	<style>
+		body
+		{
+			background: linear-gradient(327deg, #eb9a5d, #e888f4);
+			background-size: 400% 400%;
+			animation: Animate 1s ease infinite;
+		}
+		@keyframes Animate
+		{
+			0%{background-position:0% 88%}
+			50%{background-position:100% 13%}
+			100%{background-position:0% 88%}
+		}
+		div
+		{
+			background: rgba(0.8, 0.8, 0.8, 0.5);
+			border-radius: 25px;
+			position: fixed;
+			top: 50%;
+			left: 50%;
+			margin-top: -50px;
+			margin-left: -100px;
+			width: 200px;
+			height: 100px;
+			visibility: hidden;
+			padding: 10px 10px 10px 10px;
+		}
+	</style>
+</head>
+    <body ondblclick="customize()">
+    <div id="dialogue">
+    	<span>Background Preferences<span>
+    	<input style="border-radius: 25px" type="color">
+    </div>
+    <script>
+        function customize()
+        {
+            document.getElementById("dialogue").style.visibility="visible";
+        }
+    </script>
+</body></html>
